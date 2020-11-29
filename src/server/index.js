@@ -11,6 +11,18 @@ console.log(`Your API key is ${process.env.API_KEY}`);
 // Personal API Key for MeaningCloud API
 const apiKey = process.env.API_KEY;
 
+/* Middleware*/
+//Here we are configuring express to use body-parser as middle-ware.
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+app.use(bodyParser.json());
+
+// Cors for cross origin allowance
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.static('dist'));
 
 console.log(__dirname);
