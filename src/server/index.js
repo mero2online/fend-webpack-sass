@@ -43,7 +43,7 @@ app.get('/test', function (req, res) {
 });
 
 // POST Route
-app.post('https://weather-app-by-lat-and-lon.netlify.app/coordinateData', coordinateData);
+app.post('/coordinateData', coordinateData);
 
 async function coordinateData(req, res) {
   console.log('post req.body', req.body);
