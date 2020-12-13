@@ -33,11 +33,14 @@ app.get('/', function (req, res) {
   res.sendFile('dist/index.html');
 });
 
-const port = process.env.PORT || 8081
+const port = process.env.PORT || 8081;
 
 // designates what port the app will listen to for incoming requests
 app.listen(port, function () {
-  console.log(`Example app listening on port ${port}!`, `http://localhost:${port}/`);
+  console.log(
+    `Example app listening on port ${port}!`,
+    `http://localhost:${port}/`
+  );
 });
 
 app.get('/test', function (req, res) {
@@ -58,8 +61,8 @@ async function coordinateData(req, res) {
   // Base URL for OpenWeatherMap API to optain current weather data by ZIP code
   let baseURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=`;
   let apiURL = baseURL + apiKey;
-  const response = await fetch(apiURL)
-  const mcData = await response.json()
-  console.log(mcData)
-  res.send(mcData)
+  const response = await fetch(apiURL);
+  const mcData = await response.json();
+  console.log(mcData);
+  res.send(mcData);
 }
