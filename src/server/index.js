@@ -9,7 +9,7 @@ dotenv.config();
 console.log(`Your API key is ${process.env.API_KEY}`);
 
 // Personal API Key for MeaningCloud API
-const apiKey = process.env.API_KEY;
+const apiKey = '7e3d290cd442823876bb07faec6a3a8e';
 
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
