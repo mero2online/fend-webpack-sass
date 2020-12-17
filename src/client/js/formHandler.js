@@ -7,7 +7,7 @@ function handleSubmit(event) {
   // Client.checkForName(zipCode);
 
   console.log('::: Form Submitted :::');
-  postData('/coordinateData', {
+  postData('http://localhost:8081/coordinateData', {
     lat: lat,
     lon: lon,
   }).then(function (res) {
