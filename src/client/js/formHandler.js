@@ -7,7 +7,7 @@ function handleSubmit(event) {
   // Client.checkForName(zipCode);
 
   console.log('::: Form Submitted :::');
-  postData('http://localhost:8081/coordinateData', {
+  postData('https://weather-app-by-lat-and-lon.netlify.app/coordinateData', {
     lat: lat,
     lon: lon,
   }).then(function (res) {
