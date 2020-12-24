@@ -9,7 +9,7 @@
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open",
     "build": "npm run build-prod"
   },
-  "proxy": "http://localhost:8081",
+  "proxy": "http://localhost:8082",
   "homepage": "/",
   "keywords": [],
   "author": "",
