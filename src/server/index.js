@@ -4,8 +4,8 @@ const mockAPIResponse = require('./mockAPI.js');
 const fetch = require('node-fetch');
 const app = express();
 
-// const dotenv = require('dotenv');
-// dotenv.config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Personal API Key for MeaningCloud API
 const apiKey = process.env.API_KEY;
