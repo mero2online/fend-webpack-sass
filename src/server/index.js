@@ -6,7 +6,6 @@ const app = express();
 
 const dotenv = require('dotenv');
 dotenv.config();
-console.log(`Your API key is ${process.env.API_KEY}`);
 
 // Personal API Key for MeaningCloud API
 const apiKey = process.env.API_KEY;
